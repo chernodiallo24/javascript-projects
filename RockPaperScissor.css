@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #222;
+  color: #eee;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  width: 90%;
+  max-width: 700px;
+  text-align: center;
+  background-color: #333;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.message {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  min-height: 2rem;
+}
+
+.choices {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.choice {
+  border: none;
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  background-color: #eee;
+  color: #222;
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.choice:hover {
+  transform: scale(1.05);
+  background-color: #ddd;
+}
+
+.result-box {
+  background-color: #444;
+  padding: 1rem;
+  border-radius: 0.75rem;
+  margin-bottom: 2rem;
+  line-height: 1.8;
+}
+
+.result-box span {
+  font-weight: bold;
+  color: #ffd166;
+}
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.score-card {
+  background-color: #444;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  min-width: 120px;
+}
+
+.score-card p {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.score-card span {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #06d6a0;
+}
+
+.again {
+  border: none;
+  padding: 0.9rem 1.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  background-color: #ff595e;
+  color: white;
+  transition: background-color 0.2s, transform 0.2s;
+}
+
+.again:hover {
+  background-color: #e63946;
+  transform: scale(1.05);
+}
